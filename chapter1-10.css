@@ -11,7 +11,7 @@ header {
 
 main {
   width: 960px;
-  display: block;
+  display: flex;
   /* justify-content: center; */
   margin: 50px auto;
   /* padding: 600px; */
