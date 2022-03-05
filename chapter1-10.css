@@ -21,7 +21,7 @@ main {
 .around-box {
   width: 300px;
   /* padding: 10px; */
-  margin-right: 30px; /* 変更前→margin: 30px; */
+  margin: 0, 30px, 0;
   background-color: #eeeeee;
   position: relative;
 }
@@ -81,8 +81,9 @@ footer {
 
   main {
     width: 100%;
-    max-width: 768px;
+    max-width: 100%;
     display: block;
+    justify-content: center;
     margin: 0 auto;
     padding-left: 10%;
     padding-top: 50px;
@@ -91,27 +92,41 @@ footer {
 
   .around-box {
     width: 90%;
+    padding: 10px 10px;
     padding-top: 50px;
-    margin-right: 30px;
+    margin-top: 20px;
+    position: relative;
   }
 
   .img-box1 {
-    width: 90%;
     height: 150px;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: bottom;
   }
 
   .img-box2 {
-    width: 90%;
     height: 150px;
-    /* padding-bottom: 20px; */
+    margin: 10px;
+    /* margin-right: 10px; */
+    /* margin-left: 10px; */
+    background-size: cover;
+    background-position: center;
   }
 
   .img-box3 {
-    width: 90%;
     height: 150px;
-    /* padding-bottom: 50px; */
+    margin-right: 10px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .step-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   footer {
