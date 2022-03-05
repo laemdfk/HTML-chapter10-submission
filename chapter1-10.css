@@ -11,7 +11,7 @@ header {
 
 main {
   width: 960px;
-  display: flex;
+  display: block;
   /* justify-content: center; */
   margin: 50px auto;
   /* padding: 600px; */
@@ -20,8 +20,8 @@ main {
 /* 親要素にstatic入れてしまうと、子要素のプロパティ利かなくなるので注意 */
 .around-box {
   width: 300px;
-  padding: 10px;
-  margin-right: 30px;
+  /* padding: 10px; */
+  margin: 0, 30px, 0; /* 変更前→margin: 30px; */
   background-color: #eeeeee;
   position: relative;
 }
@@ -70,13 +70,13 @@ footer {
   background-color: #aaaaaa;
 }
 
-/* レスポンシブ用コード iPad-mini想定か？(768px)*/
+/* レスポンシブ用コード　iPad-mini想定か？ */
 /* 変更点だけを記述する */
 
 @media screen and (max-width: 768px) {
   header {
     width: 100%;
-    /* max-width: 768px; */
+    /* max-width: 768px */
   }
 
   main {
@@ -91,8 +91,8 @@ footer {
   }
 
   .around-box {
-    width: 90%;
-    padding: 10px 10px;
+    height: 90%;
+    padding: 10px, 10px;
     padding-top: 50px;
     margin-top: 20px;
     position: relative;
@@ -131,7 +131,8 @@ footer {
 
   footer {
     width: 100%;
-    /* max-width: 768px; */
+    /* max-width:768px */
   }
 }
+
 
